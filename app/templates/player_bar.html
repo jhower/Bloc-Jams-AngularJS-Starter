@@ -3,10 +3,18 @@
     <div class="control-group main-controls">
       <a class="previous">
         <span class="ion-skip-backward"></span>
-      </a>
-      <a class="play-pause">
-        <span class="ion-play"></span>
-      </a>
+</a>
+
+<table class="player-bar">
+  <tr class="player-bar" ng-mouseover="hovered = true" ng-mouseleave="hovered = false">
+  <td class="player-bar">
+    <span ng-show="!playing && !hovered"></span>
+    <a class="player-bar" ng-show="!playing && hovered"><span class="ion-play"></span></a>
+    <a class="player-bar" ng-show="playing"><span class="ion-pause"></span></a>
+  </td>
+  </tr>
+</table>
+
       <a class="next">
         <span class="ion-skip-forward"></span>
       </a>
