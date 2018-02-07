@@ -31,8 +31,12 @@ var albumMarconi = {
     ]
 };
 Fixtures.getAlbum = function() {
-         return albumPicasso;
+  return albumPicasso;
      };
+
+Fixtures.getCollection = function(numberOfAlbums){
+  return albumPicasso[4];
+};
 return Fixtures;
 }
-};
+});
