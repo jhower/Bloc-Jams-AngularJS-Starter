@@ -1,16 +1,7 @@
 (function() {
-<<<<<<< HEAD
   function AlbumCtrl(Fixtures) {
-    this.albums = [];
-         this.albumData = angular.copy(albumPicasso));
-     }
-=======
-  function AlbumCtrl() {
-
-    this.albumData = angular.copy(albumPicasso);
+    this.albumData = Fixtures.getAlbum();
 console.log(this);
-
->>>>>>> assignement-5
   }
 
      angular
