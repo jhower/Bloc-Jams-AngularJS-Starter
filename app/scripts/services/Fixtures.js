@@ -1,6 +1,10 @@
 (function() {
   function Fixtures() {
     var Fixtures = {};
+<<<<<<< HEAD
+=======
+
+>>>>>>> checkpoint-6
     var albumPicasso = {
     title: 'The Colors',
     artist: 'Pablo Picasso',
@@ -31,8 +35,21 @@ var albumMarconi = {
     ]
 };
 Fixtures.getAlbum = function() {
+<<<<<<< HEAD
          return albumPicasso;
      };
 return Fixtures;
 }
 };
+=======
+  return albumPicasso;
+     };
+
+Fixtures.getCollection = function(numberOfAlbums){
+  return albumPicasso[4];
+};
+
+return Fixtures;
+}
+});
+>>>>>>> checkpoint-6
