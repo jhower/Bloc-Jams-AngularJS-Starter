@@ -38,11 +38,10 @@ Fixtures.getAlbum = function() {
 Fixtures.getCollection = function(numberOfAlbums){
   var array = []
   for (i = 0; i < numberOfAlbums; i++){
-    array.push(albums);
+    array.push(Fixtures);
   }
   return array;
 };
-console.log(collection(12));
 
 return Fixtures;
 }
