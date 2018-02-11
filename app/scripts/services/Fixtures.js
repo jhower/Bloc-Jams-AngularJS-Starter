@@ -42,7 +42,6 @@ Fixtures.getCollection = function(numberOfAlbums){
   }
   return array;
 };
-console.log(collection(12));
 
 return Fixtures;
 }
