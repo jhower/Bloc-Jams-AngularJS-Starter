@@ -28,6 +28,19 @@
       currentSong = song;
     };
 
+    var playSong = function(song) {
+      currentBuzzObject.play();
+      song.playing = true;
+    }
+
+    var pauseSong = function(song) {
+      currentBuzzObject.pause();
+      song.playing = false;
+    }
+
+
+
+
     SongPlayer.play = function(song) {
       if (currentSong !== song) {
         setSong(song);
