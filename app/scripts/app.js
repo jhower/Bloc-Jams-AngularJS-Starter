@@ -7,7 +7,7 @@
       });
     $stateProvider
       .state('landing', {
-        url: '/landing',
+        url: '/',
         controller: 'LandingCtrl as landing',
         templateUrl: '/templates/landing.html'
       })
