@@ -59,6 +59,10 @@
       song.playing = null;
     }
 
+SongPlayer.currentSong = null;
+SongPlayer.currentTime = null;
+SongPlayer.volume  = 75;
+
 //player bar play
     SongPlayer.play = function(song) {
       song = song || SongPlayer.currentSong;
@@ -105,7 +109,6 @@ SongPlayer.next = function() {
       playSong(song);
   }
 }
-
 /**
  * @function setCurrentTime
  * @desc Set current time (in seconds) of currently playing song
@@ -116,6 +119,12 @@ SongPlayer.next = function() {
          currentBuzzObject.setTime(time);
      }
  };
+
+ SongPlayer.setVolume = function(volume) {
+  if (currentBuzzObject) {
+    currentBuzzObject.setVolume(volume);
+  }
+ }
 
  return SongPlayer;
 }
